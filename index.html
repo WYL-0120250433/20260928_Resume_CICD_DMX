@@ -4,14 +4,14 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <meta content="noindex, nofollow" name="robots"/>
-  <meta content="课程练习：个人介绍、技能与作品门户。" name="description"/>
+  <meta content="吴银丽的个人主页：学习方向、履历与作品。" name="description"/>
   <title>
-   我的个人主页
+   吴银丽 · 个人主页
   </title>
   <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
   <!-- CSS 负责颜色、字体、布局；defer 让 JavaScript 在 HTML 解析完成后执行。 -->
   <link href="styles.css" rel="stylesheet"/>
-   <script src="works-data.js" defer></script>
+  <script src="works-data.js" defer></script>
   <script src="works-render.js" defer></script>
   <script src="app.js" defer></script>
  </head>
@@ -19,191 +19,139 @@
   <a class="skip-link" href="#main">
    跳到正文
   </a>
-  <!-- 第 4 课新增①：顶部阅读进度条，宽度由 JavaScript 控制 -->
+  <!-- 顶部阅读进度条，宽度由 JavaScript 控制 -->
   <div class="reading-progress" id="reading-progress">
   </div>
   <header class="site-header">
    <div class="container header-inner">
     <a class="brand" href="#about">
-     我的主页
+     吴银丽
     </a>
-    <!-- href="#栏目ID" 是原生锚点：即使不加载 JavaScript，也能跳到对应栏目。 -->
     <nav aria-label="主导航">
      <a href="#about">
       关于
      </a>
      <a href="#experience">
-      经历
-     </a>
-     <a href="#projects">
-      科研
-     </a>
-     <a href="#skills">
-      技能
+      履历
      </a>
      <a href="#portfolio">
       作品
      </a>
-     <a href="#teaching">
-      教学
-     </a>
-     <a href="#publications">
-      成果
+     <a href="#records">
+      记录
      </a>
     </nav>
    </div>
   </header>
   <main id="main">
-   <!-- HTML 练习：修改姓名、研究方向、照片路径和联系方式。 -->
+   <!-- 关于：居中编辑式首屏，姓名、方向与联系信息。 -->
    <section class="hero" id="about">
     <div class="container">
-     <div class="hero-top">
-      <div class="hero-copy">
-       <h1>
-        林同学
-        <span>
-         Lin
-        </span>
-       </h1>
-       <p class="hero-role">
-        软件技术专业学生 · 前端开发学习者
-       </p>
-       <p class="hero-school">
-        我的学校 · 我的班级
-       </p>
-      </div>
-      <div class="hero-visual">
-       <figure>
-        <img alt="个人头像占位图，请替换为自己的图片" height="220" src="assets/avatar.svg" width="220"/>
-       </figure>
-      </div>
-     </div>
-     <div class="research-direction" id="research-direction">
-      <span class="eyebrow">
-       学习方向
+     <span class="eyebrow hero-eyebrow"><span class="num">01</span> 关于</span>
+     <figure class="hero-avatar">
+      <img alt="吴银丽的个人头像" height="140" src="assets/avatar.svg" width="140"/>
+     </figure>
+     <h1>
+      吴银丽
+      <span>
+       Wu Yinli
       </span>
-      <p>
-       HTML5、CSS3、JavaScript，正在学习 Git、数据库与网站部署。
-      </p>
-     </div>
-     <div class="profile-details">
+     </h1>
+     <p class="hero-role">
+      大模型技术专业学生 · 前端开发学习者
+     </p>
+     <p class="hero-school">
+      广东科学技术职业学院 · 25大模型应用开发
+     </p>
+     <p class="hero-intro">
+      专注于 HTML5、CSS3 与 JavaScript，正在学习 Git、数据库与网站部署，用项目记录成长。
+     </p>
+     <dl class="hero-meta">
       <div>
-       <span>
+       <dt>
         学习阶段
-       </span>
-       <p>
+       </dt>
+       <dd>
         在校学习
-       </p>
+       </dd>
       </div>
       <div>
-       <span>
+       <dt>
         所在城市
-       </span>
-       <p>
+       </dt>
+       <dd>
         珠海
-       </p>
+       </dd>
       </div>
       <div>
-       <span>
-        联系
-       </span>
-       <p>
-        请填写可公开的联系方式
-       </p>
+       <dt>
+        联系方式
+       </dt>
+       <dd>
+        15018246581
+       </dd>
       </div>
       <div>
-       <span>
+       <dt>
         学校地址
-       </span>
-       <p>
-        请填写自己的学校地址
-       </p>
+       </dt>
+       <dd>
+        广东省珠海市金湾区
+       </dd>
       </div>
-     </div>
+     </dl>
     </div>
    </section>
-   <!-- 每个栏目复用 section → container → 标题/内容 的结构，统一由 CSS 控制样式。 -->
+   <!-- 履历：教育与项目经历合并为一条时间线。 -->
    <section class="section" id="experience">
     <div class="container">
      <header class="section-heading">
+      <span class="eyebrow">
+       <span class="num">02</span> 履历
+      </span>
       <h2>
-       教育与工作经历
+       经历：蓝桥杯
       </h2>
      </header>
      <div class="section-content">
-      <!-- TASK-HTML：复制 experience-item 可增加一条自己的经历。 -->
-      <div class="experience-item">
-       <p class="experience-heading">
-        <strong>
-         我的学校 · 软件技术专业
-        </strong>
-        <time>
-         在读
-        </time>
-       </p>
-       <p class="experience-detail">
-        学习网页开发，用项目记录成长。
-       </p>
+      <div class="timeline">
+       <article class="timeline-item">
+        <p class="timeline-when">
+         <time>
+          在读
+         </time>
+        </p>
+        <h3 class="timeline-title">
+         广东科学技术职业学院 · 25大模型应用开发
+        </h3>
+        <p class="timeline-detail">
+         学习网页开发，用项目记录成长。
+        </p>
+       </article>
+       <article class="timeline-item">
+        <p class="timeline-when">
+         <time>
+          课程练习
+         </time>
+        </p>
+        <h3 class="timeline-title">
+         个人主页
+        </h3>
+        <p class="timeline-detail">
+         制作个人网页，展示资料与作品，记录修改、测试与发布过程。
+        </p>
+       </article>
       </div>
      </div>
     </div>
    </section>
-   <section class="section" id="projects">
-    <div class="container">
-     <header class="section-heading">
-      <h2>
-       项目经历
-      </h2>
-     </header>
-     <div class="section-content">
-      <article class="research-item">
-       <h3>
-        <time>
-         课程练习
-        </time>
-        个人主页
-       </h3>
-       <p>
-        项目内容：制作自己的网页，展示资料与作品，记录修改、测试与发布过程。
-       </p>
-      </article>
-     </div>
-    </div>
-   </section>
-   <section class="section" id="skills">
-    <div class="container">
-     <header class="section-heading">
-      <h2>
-       技能与实践
-      </h2>
-     </header>
-     <div class="section-content">
-      <ul class="skills-list">
-       <li>
-        <strong>
-         网页内容
-        </strong>
-        HTML5 结构、图片、链接。
-       </li>
-       <li>
-        <strong>
-         页面样式
-        </strong>
-        CSS3 字体、颜色、响应式布局。
-       </li>
-       <li>
-        <strong>
-         开发过程
-        </strong>
-        JavaScript、Git、检查与部署。
-       </li>
-      </ul>
-     </div>
-    </div>
-   </section>
+   <!-- 作品：筛选与排序工具条由 JavaScript 生成，列表默认提供静态卡片兜底。 -->
    <section class="section" id="portfolio">
     <div class="container">
      <header class="section-heading">
+      <span class="eyebrow">
+       <span class="num">03</span> 作品
+      </span>
       <h2>
        作品门户
       </h2>
@@ -211,8 +159,6 @@
        以下为教学示例，完成后可替换为自己的作品。
       </p>
      </header>
-     <!-- 第 5 课新增：筛选与排序工具条。里面的按钮由 JavaScript 生成，
-          不写 JS 时这里是空的，页面照常显示全部作品。 -->
      <div class="works-toolbar">
       <div class="works-tags" id="works-tags">
       </div>
@@ -284,15 +230,44 @@
      </ol>
     </div>
    </section>
-   <section class="section" id="teaching">
+   <!-- 记录：技能、学期目标与学习记录合并。 -->
+   <section class="section" id="records">
     <div class="container">
      <header class="section-heading">
+      <span class="eyebrow">
+       <span class="num">04</span> 记录
+      </span>
       <h2>
-       学习与实践
+       技能与学习记录
       </h2>
      </header>
      <div class="section-content">
-      <div class="teaching-group">
+      <div class="record-group">
+       <h3>
+        技能与实践
+       </h3>
+       <ul class="skills-list">
+        <li>
+         <strong>
+          网页内容
+         </strong>
+         HTML5 结构、图片、链接。
+        </li>
+        <li>
+         <strong>
+          页面样式
+         </strong>
+         CSS3 字体、颜色、响应式布局。
+        </li>
+        <li>
+         <strong>
+          开发过程
+         </strong>
+         JavaScript、Git、检查与部署。
+        </li>
+       </ul>
+      </div>
+      <div class="record-group">
        <h3>
         本学期目标
        </h3>
@@ -308,20 +283,9 @@
         </li>
        </ol>
       </div>
-     </div>
-    </div>
-   </section>
-   <section class="section" id="publications">
-    <div class="container">
-     <header class="section-heading">
-      <h2>
-       学习记录
-      </h2>
-     </header>
-     <div class="section-content">
-      <div class="publication-group">
+      <div class="record-group">
        <h3>
-        我的记录
+        学习记录
        </h3>
        <ol class="references">
         <li>
@@ -336,20 +300,42 @@
     </div>
    </section>
   </main>
-  <!-- 第 4 课新增：这两块由 JavaScript 控制，不写 JS 时它们不会出现 -->
+  <!-- 这两块由 JavaScript 控制，不写 JS 时它们不会出现 -->
   <p aria-live="polite" class="section-indicator" id="section-indicator">
   </p>
   <button aria-label="返回页面顶部" class="to-top" id="to-top" type="button">
    ↑
   </button>
   <footer>
-   <div class="container footer-inner">
-    <a href="#about">
-     回到顶部
-    </a>
-    <a href="#portfolio">
-     作品门户
-    </a>
+   <div class="container">
+    <div class="footer-inner">
+     <div class="footer-brand">
+      吴银丽
+      <span>
+       · Wu Yinli
+      </span>
+     </div>
+     <nav class="footer-nav">
+      <a href="#about">
+       关于
+      </a>
+      <a href="#experience">
+       履历
+      </a>
+      <a href="#portfolio">
+       作品
+      </a>
+      <a href="#records">
+       记录
+      </a>
+     </nav>
+    </div>
+    <p class="footer-motto">
+     用项目记录成长。
+    </p>
+    <p class="footer-copy">
+     © 2026 吴银丽 · 广东科学技术职业学院
+    </p>
    </div>
   </footer>
  </body>
